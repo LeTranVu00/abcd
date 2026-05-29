@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles\style.css">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
@@ -22,7 +23,8 @@
             </div>
         </header>
         <nav>
-            <ul class ="menu">
+            <img id="icon-menu" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Icon Menu">
+            <ul class ="menu" id="menu">
                 <li><a href="index.html">Trang chủ</a></li>
                 <li>
                     <a href="about.html">Giới thiệu</a>
@@ -36,19 +38,120 @@
                 <li>
                     <a href="services.html">Sản phẩm</a>
                         <ul class="submenu">
-                            <li><a href="tablets.html">Máy tính bảng</a></li>
-                            <li><a href="smartphones.html">Điện thoại</a></li>
-                            <li><a href="laptops.html">Laptop</a></li>
+                            <li><a href="#máy tính bảng">Máy tính bảng</a></li>
+                            <li><a href="#điện thoại">Điện thoại</a></li>
+                            <li><a href="#máy ảnh">Máy ảnh</a></li>
                         </ul>
                     </li>
                 </li>
                 <li><a href="contact.html">Liên hệ</a></li>
             </ul>
         </nav>
+        <script>
+            const button = document.getElementById('icon-menu');
+            const menu = document.getElementById('menu');
+
+            button.addEventListener('click', function() {
+                menu.classList.toggle('show');
+            });
+        </script>
         <section>
             <h2>Hello World</h2>
             <img src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="Section Image">
         </section>
+        <h2 class = "chapter"> Sản phẩm mới </h2>
+        <main>
+
+            <div class="product">
+                <img src="./assets/laptop.jpg" alt="Product Image">
+                <div class="info">
+                    <p>Tên sản phẩm</p>
+                    <p>Cấu hình cơ bản</p>
+                    <p>Giá: <span class = "old-price">14.000.000</span> 12.000.000 VND</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="./assets/laptop.jpg" alt="Product Image">
+                <div class="info">
+                    <p>Tên sản phẩm</p>
+                    <p>Cấu hình cơ bản</p>
+                    <p>Giá: <span class = "old-price">14.000.000</span> 12.000.000 VND</p>
+                </div>           
+            </div>
+
+            <div class="product">
+                <img src="./assets/laptop.jpg" alt="Product Image">
+                <div class="info">
+                    <p>Tên sản phẩm</p>
+                    <p>Cấu hình cơ bản</p>
+                    <p>Giá: <span class = "old-price">14.000.000</span> 12.000.000 VND</p>
+                </div>           
+            </div>
+
+            <div class="product">
+                <img src="./assets/laptop.jpg" alt="Product Image">
+                <div class="info">
+                    <p>Tên sản phẩm</p>
+                    <p>Cấu hình cơ bản</p>
+                    <p>Giá: <span class = "old-price">14.000.000</span> 12.000.000 VND</p>
+                </div>           
+            </div>
+
+            <div class="product">
+                <img src="./assets/laptop.jpg" alt="Product Image">
+                <div class="info">
+                    <p>Tên sản phẩm</p>
+                    <p>Cấu hình cơ bản</p>
+                    <p>Giá: <span class = "old-price">14.000.000</span> 12.000.000 VND</p>
+                </div>           
+            </div>
+
+            <div class="product">
+                <img src="./assets/laptop.jpg" alt="Product Image">
+                <div class="info">
+                    <p>Tên sản phẩm</p>
+                    <p>Cấu hình cơ bản</p>
+                    <p>Giá: <span class = "old-price">14.000.000</span> 12.000.000 VND</p>
+                </div>           
+            </div>
+        </main>
+
+
+        <h2>MÁY TÍNH BẢNG</h2>
+        <main>
+            <div class="product" id = "máy tính bảng">
+                <img src="./assets/laptop.jpg" alt="Product Image">
+                <div class="info">
+                    <p>Tên sản phẩm</p>
+                    <p>Cấu hình cơ bản</p>
+                    <p>Giá: <span class = "old-price">14.000.000</span> 12.000.000 VND</p>
+                </div>
+            </div>
+        </main>
+        <h2>ĐIỆN THOẠI</h2>
+        <main>
+            <div class="product" id = "điện thoại">
+                <img src="./assets/laptop.jpg" alt="Product Image">
+                <div class="info">
+                    <p>Tên sản phẩm</p>
+                    <p>Cấu hình cơ bản</p>
+                    <p>Giá: <span class = "old-price">14.000.000</span> 12.000.000 VND</p>
+                </div>           
+            </div>
+        </main>
+        <h2>MÁY ẢNH</h2>
+        <main>
+            <div class="product" id = "máy ảnh">
+                <img src="./assets/laptop.jpg" alt="Product Image">
+                <div class="info">
+                    <p>Tên sản phẩm</p>
+                    <p>Cấu hình cơ bản</p>
+                    <p>Giá: <span class = "old-price">14.000.000</span> 12.000.000 VND</p>
+                </div>           
+            </div>
+
+        </main>
         <footer>Cuối trang</footer>
     </div>
 </body>
